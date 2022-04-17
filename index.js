@@ -41,8 +41,23 @@ function lifeInWeeks(age) {
     //Write your code here.
     
     let dayLeft = (90 - age) * 365;
-    weekLeft = Math.floor(dayLeft / 7);
-    monthLeft = Math.floor(weekLeft / 30);
+    weekLeft = (90 - age) * 52 //Math.floor(dayLeft / 7);
+    monthLeft = (90 - age) * 12 //Math.floor(weekLeft / 30);
     console.log("You have", dayLeft, "days", weekLeft, "weeks", "and", monthLeft, "months left.");
 }
-lifeInWeeks(40);
+lifeInWeeks(51);
+function bmi(weight, height) {
+    let formula = weight / (height * height);
+    //return Math.floor(formula) 
+    console.log(Math.floor(formula));
+}
+//let myBmi = bmi(65, 1.8);
+//console.log(myBmi);
+bmi(65, 1.8);
+
+function loveCal(a, b) {
+    let lovePo = Math.floor(Math.random(a, b) * 100) + 1;
+    return lovePo
+}
+let love = loveCal(2, 4);
+console.log(love);
