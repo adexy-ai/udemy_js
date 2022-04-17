@@ -18,7 +18,8 @@ function getMilk(money) {
   console.log("moveUp");
   console.log("moveUp");
   console.log("moveRight");
-  console.log("moveRight");
+    console.log("moveRight");
+    console.log("The amount of bottle", money, "can by is", Math.floor(bottle))
   console.log("moveLeft");
   console.log("moveLeft");
   console.log("moveDown");
@@ -26,9 +27,22 @@ function getMilk(money) {
   console.log("moveDown");
   console.log("moveDown");
   console.log("moveLeft");
-  console.log("moveLeft");
+    console.log("moveLeft");
     console.log("enterHouse");
-    console.log(Math.floor(bottle))
+    
 }
 
 getMilk(10);
+
+function lifeInWeeks(age) {
+    
+    /************Don't change the code above************/
+    
+    //Write your code here.
+    
+    let dayLeft = (90 - age) * 365;
+    weekLeft = Math.floor(dayLeft / 7);
+    monthLeft = Math.floor(weekLeft / 30);
+    console.log("You have", dayLeft, "days", weekLeft, "weeks", "and", monthLeft, "months left.");
+}
+lifeInWeeks(40);
