@@ -55,9 +55,33 @@ function bmi(weight, height) {
 //console.log(myBmi);
 bmi(65, 1.8);
 
-function loveCal(a, b) {
-    let lovePo = Math.floor(Math.random(a, b) * 100) + 1;
+function loveCal() {
+    let lovePo = Math.floor(Math.random() * 100) + 1;
     return lovePo
 }
-let love = loveCal(2, 4);
+let love = loveCal();
 console.log(love);
+
+function isLeap(year) {
+    
+    /**************Don't change the code above****************/
+    
+    //Write your code here.    
+    if (year % 4 === 0 || year % 400 === 0) {
+        console.log("The year", year, "is a leap year");
+    } else if (year % 100 !== 0) {
+        console.log("The year", year, "is not a leap year");
+    } else if (year % 400 === 0) {
+        console.log("The year", year, "is a leap year");
+    }
+    
+
+        /**************Don't change the code below****************/
+}
+    isLeap(1948)
+
+//let name = prompt("What is your name?");
+arrayOfName = ["ade", "bayo", "kunle", "jide", "tobi", "balkis", "yemi", "ema"];
+console.log(arrayOfName);
+console.log(arrayOfName.length);
+console.log(arrayOfName.includes("bayo"));
